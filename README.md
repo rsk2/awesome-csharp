@@ -1,11 +1,9 @@
 # awesome-csharp
 Code snippets about the lesser known features of c-sharp
 
-This repository is generally for me to learn or revise features of C#. 
+This repository is generally for me to learn or revise features of C#. I am happy to share these code snippets and I hope it is useful for others. 
 
-I am happy to share these code snippets and I hope it is useful for others. All the code is primarily in Program.cs 
-
-Here is a description of each routine:
+All the code is primarily in Program.cs. Here is a description of each routine:
 
 **1. String.Join**
 String.Join makes it easier to join elements of an array together in a string and we don't need to write a loop
