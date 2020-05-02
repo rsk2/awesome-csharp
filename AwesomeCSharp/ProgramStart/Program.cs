@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProgramStart
 {
@@ -13,6 +11,7 @@ namespace ProgramStart
             DemonstrateStringJoin();
             DemonstrateStringInterpolation();
             DemonstrateRefVsOut();
+            DemonstrateAnonymousFunction();
             Console.ReadLine();
         }
 
@@ -58,11 +57,27 @@ namespace ProgramStart
             Console.WriteLine();
         }
 
+        public static void DemonstrateAnonymousFunction()
+        {
+            Console.WriteLine("Demonstrating AnonymousFunction:");
+            GenerateInteger Zero = new GenerateInteger( () => 0);
+            Console.WriteLine("Generate integer Zero() generates: " + Zero());
+            GenerateInteger RandomInteger = new GenerateInteger(() => (new Random()).Next());
+            Console.WriteLine("Generate integer RandomInteger() generates: " + RandomInteger());
+            GenerateInteger CurrentMonth = new GenerateInteger(() => DateTime.Now.Month);
+            Console.WriteLine("Generate integer CurrentMonth() generates: " + CurrentMonth());
+            Console.WriteLine();
+        }
+
+        #region Helpers
+
+        delegate int GenerateInteger();
         public static void TestRefAndOut(ref int i, out int j)
         {
             j = i;
             i = 0;
         }
+        #endregion
 
     }
 }
