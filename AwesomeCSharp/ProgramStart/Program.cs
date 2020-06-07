@@ -81,6 +81,17 @@ namespace ProgramStart
 
         }
 
+        //List comprehensions in C#
+        public static void DemonstrateListComprehensions()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Demonstrating ListComprehension:");
+            Console.WriteLine("Python syntax: [2*number for number in range(0,10)]");
+            //Syntax in c#
+            List<int> twoMultiplicationList = Enumerable.Range(1, 10).Select(x => x * 2).ToList();
+            Console.WriteLine($"Result: [{String.Join(",", twoMultiplicationList)}]");
+        }
+
         #region Helpers
 
         delegate int GenerateInteger();
