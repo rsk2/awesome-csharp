@@ -13,6 +13,7 @@ namespace ProgramStart
             DemonstrateRefVsOut();
             DemonstrateAnonymousFunction();
             DemonstrateHashSet();
+            DemonstrateListComprehensions();
             Console.ReadLine();
         }
 
@@ -25,20 +26,20 @@ namespace ProgramStart
             //Below lines show that we can use String.Join with list 
             var floatList = new List<float> { 1.3f, 2.0f, 4.5f, 1.22f, 7.8f};
             Console.WriteLine("List of fractions: ({0})", string.Join("|", floatList));
-            Console.WriteLine();
         }
 
         public static void DemonstrateStringInterpolation()
         {
+            Console.WriteLine();
             Console.WriteLine("Demonstrating String Interpolation:");
             int i = 10, j = 20;
             //String interpolation provides a more readable and convenient syntax to create formatted strings
             Console.WriteLine($"Adding {i} with {j} gives {i+j}");
-            Console.WriteLine();
         }
 
         public static void DemonstrateRefVsOut()
         {
+            Console.WriteLine();
             Console.WriteLine("Demonstrating ref vs out:");
             /* Difference between ref and out is that a variable used as out need not be initialized 
              * before usage.*/ 
@@ -54,11 +55,11 @@ namespace ProgramStart
             string strNumber = "15";
             Int32.TryParse(strNumber, out int result); 
             Console.WriteLine($"String 15 converted to int {result}");
-            Console.WriteLine();
         }
 
         public static void DemonstrateAnonymousFunction()
         {
+            Console.WriteLine();
             Console.WriteLine("Demonstrating AnonymousFunction:");
             GenerateInteger Zero = new GenerateInteger(() => 0);
             Console.WriteLine("Generate integer Zero() generates: " + Zero());
@@ -66,12 +67,12 @@ namespace ProgramStart
             Console.WriteLine("Generate integer RandomInteger() generates: " + RandomInteger());
             GenerateInteger CurrentMonth = new GenerateInteger(() => DateTime.Now.Month);
             Console.WriteLine("Generate integer CurrentMonth() generates: " + CurrentMonth());
-            Console.WriteLine();
         }
 
         //C# has inbuilt support for HashSet, HashTables and Dictionaries. 
         public static void DemonstrateHashSet()
         {
+            Console.WriteLine();
             Console.WriteLine("Demonstrating HashSet:");
             int[] arrayWithDuplicates = { 1, -11, 44, 101, 1, 3, 54, 44, -2, -11 };
             Console.WriteLine($"Original Array: {String.Join(",", arrayWithDuplicates)}");
