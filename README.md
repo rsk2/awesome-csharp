@@ -16,3 +16,9 @@ String.Join makes it easier to join elements of an array together in a string an
  
  **4.Anonymous functions**
  Functions in just a single line of code. 
+
+ **5.HashSet**
+ A useful collection
+
+  **6.List comprehensions**
+  Can we do in C# what we do in python?
