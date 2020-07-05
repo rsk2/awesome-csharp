@@ -22,3 +22,6 @@ String.Join makes it easier to join elements of an array together in a string an
 
   **6.List comprehensions**
   Can we do in C# what we do in python?
+  
+  **Code examples > InitializingVariables.cs**
+  The methods in the class visually show different coding techniques to initialize different types of variables
