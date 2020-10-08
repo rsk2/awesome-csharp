@@ -25,3 +25,6 @@ String.Join makes it easier to join elements of an array together in a string an
   
   **7. Class: InitializingVariables.cs**
   The methods in the class visually show different coding techniques to initialize different types of variables
+  
+  **8. Finding common elements between arrays in one line using LINQ**
+  The power of LINQ lets us reduce several lines of code into one single line
