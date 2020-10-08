@@ -14,6 +14,7 @@ namespace ProgramStart
             DemonstrateAnonymousFunction();
             DemonstrateHashSet();
             DemonstrateListComprehensions();
+            DemonstratingIntersectionBetweenArraysUsingLinq();
             Console.ReadLine();
         }
 
@@ -92,6 +93,27 @@ namespace ProgramStart
             Console.WriteLine($"Result: [{String.Join(",", twoMultiplicationList)}]");
         }
 
+
+        //Intersection between arrays using LINQ
+        public static void DemonstratingIntersectionBetweenArraysUsingLinq()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Demonstrating Intersection using LINQ:");
+            int[] a = { 1, 3, 4, 5 };
+            int[] b = { 1, 2, 6, 7, 5, 9 };
+
+            Console.WriteLine($"Result: [{String.Join(",", a.Where(i => b.Contains(i)).ToList())}]");
+            //Above single line replaces below code:
+            //var result = new List<int>();
+            //foreach(int i in a)
+            //{
+            //    if (b.Contains(i))
+            //        result.Add(i);
+            //}
+            //Console.WriteLine($"Result: [{String.Join(",", result)}]");
+
+        }
+   
         #region Helpers
 
         delegate int GenerateInteger();
