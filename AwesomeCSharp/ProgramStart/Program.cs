@@ -94,11 +94,11 @@ namespace ProgramStart
         }
 
 
-        //Intersection between arrays using LINQ
+        //Find common elements between arrays using LINQ
         public static void DemonstratingIntersectionBetweenArraysUsingLinq()
         {
             Console.WriteLine();
-            Console.WriteLine("Demonstrating Intersection using LINQ:");
+            Console.WriteLine("Demonstrating array intersection using LINQ:");
             int[] a = { 1, 3, 4, 5 };
             int[] b = { 1, 2, 6, 7, 5, 9 };
 
