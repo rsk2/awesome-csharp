@@ -23,8 +23,8 @@ String.Join makes it easier to join elements of an array together in a string an
   **6. List comprehensions**
   Can we do in C# what we do in python?
   
-  **7. Class: InitializingVariables.cs**
-  The methods in the class visually show different coding techniques to initialize different types of variables
-  
-  **8. Finding common elements between arrays in one line using LINQ**
+  **7. Finding common elements between arrays in one line using LINQ**
   The power of LINQ lets us reduce several lines of code into one single line
+  
+  **8. Different ways to declare and initialize variables (this is in a different file InitializingVariables.cs)**
+  The methods in the class visually show different coding techniques to initialize different types of variables
