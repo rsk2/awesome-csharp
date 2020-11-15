@@ -15,6 +15,7 @@ namespace ProgramStart
             DemonstrateHashSet();
             DemonstrateListComprehensions();
             DemonstratingIntersectionBetweenArraysUsingLinq();
+            DemonstratingExceptionsWhileConvertingStringToInteger();
             Console.ReadLine();
         }
 
@@ -113,7 +114,56 @@ namespace ProgramStart
             //Console.WriteLine($"Result: [{String.Join(",", result)}]");
 
         }
-   
+
+        //Convert a string to a 32 bit integer with and without exceptions
+        public static void DemonstratingExceptionsWhileConvertingStringToInteger()
+        {
+            Console.WriteLine();
+            string sampleString = "NotAnInteger";
+            Console.WriteLine($"Demonstrating converting string \"{sampleString}\" to an integer with and without exceptions:");
+            int result;
+            try
+            {
+                result = Convert.ToInt32(sampleString);
+            }
+            catch (Exception ex)
+            {
+                //string was not successfully converted to integer and an exception was thrown
+                Console.WriteLine($"Using Convert.ToInt32(), the {ex.GetType()} exception was thrown.");
+            }
+
+            try
+            {
+                result = Int32.Parse(sampleString);
+            }
+            catch (Exception ex)
+            {
+                //string was not successfully converted to integer and an exception was thrown
+                Console.WriteLine($"Using Int32.Parse(), the {ex.GetType()} exception was thrown.");
+            }
+
+            try
+            {
+                if (Int32.TryParse(sampleString, out result))
+                {
+                    //control will come here if string was successfully converted to integer
+                }
+                else
+                {
+                    //string was not successfully converted, however we avoided an exception which is better for performance
+                    Console.WriteLine($"Using Int32.TryParse(), we avoided unnecessary exceptions in our code.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Using Int32.TryParse, the {ex.GetType()} exception was thrown.");
+            }          
+
+        }
+
+
+
+
         #region Helpers
 
         delegate int GenerateInteger();
