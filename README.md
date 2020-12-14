@@ -3,8 +3,6 @@ Code snippets about the lesser known features of c-sharp
 
 This repository is generally for me to learn or revise features of C#. I am happy to share these code snippets and I hope it is useful for others. 
 
-Unless mentioned otherwise, code is present in **Program.cs**. 
-
 **1. String.Join:**
 String.Join makes it easier to join elements of an array together in a string and we don't need to write a loop
  
@@ -31,3 +29,10 @@ String.Join makes it easier to join elements of an array together in a string an
   
   **9. Different ways to declare and initialize variables (this is in a different file InitializingVariables.cs):**
   The methods in the class visually show different coding techniques to initialize different types of variables
+
+**Instructions to run:**
+You can clone this repo and run the project using Visual Studio. Since this is a console application, you can view the out put in the console.
+
+Unless mentioned otherwise, code is present in **Program.cs**. 
+
+
