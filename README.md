@@ -33,6 +33,6 @@ String.Join makes it easier to join elements of an array together in a string an
 ## Instructions to run:
 You can clone this repo and run the project using Visual Studio. Since this is a console application, you can directly run and view the output in the console.
 
-Unless mentioned otherwise, code is present in **Program.cs**. 
+Unless mentioned otherwise, code is present in **Program.cs**. Comments present in the code, provide further explanation.
 
 
